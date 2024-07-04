@@ -1,0 +1,36 @@
+CREATE TABLE last_name (
+    id INT PRIMARY KEY,
+    last_name VARCHAR
+);
+CREATE TABLE first_name (
+    id INT PRIMARY KEY,
+    first_name VARCHAR
+);
+CREATE TABLE surname (
+    id INT PRIMARY KEY,
+    surname VARCHAR
+);
+
+INSERT INTO last_name (id, last_name) VALUES
+    (1, 'Иванов'),
+	(2, 'Петров'),
+	(3, 'Сидоров');
+	
+INSERT INTO first_name (id, first_name) VALUES
+    (1, 'Иван'),
+	(2, 'Петр'),
+	(3, 'Сидор');
+
+
+INSERT INTO surname (id, surname) VALUES
+    (1, 'Иванович'),
+	(2, 'Петрович'),
+	(3, 'Сидорович');
+
+select last_name, first_name, surname
+from last_name
+inner join first_name
+on last_name.id = first_name.id
+inner join surname
+on last_name.id = surname.id
+order by last_name desc;

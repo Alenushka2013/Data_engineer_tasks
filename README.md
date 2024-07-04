@@ -1,9 +1,3 @@
-first commit
-hello
-second trying
-and fourth
-jhlklkglk
+Olena Kirieva
 
-
-
-welcome!
+my favourite hobby is ballet
